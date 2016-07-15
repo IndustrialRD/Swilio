@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_Swilio, ______Target_SwilioTestSuite);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        __PBXFileRef_Swilio_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'Swilio_Info.plist';
+            path = 'Swilio.xcodeproj/Swilio_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_Swilio = {
+            isa = PBXGroup;
+            name = Swilio;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/Swilio.swift', __PBXFileRef_Swilio_Info.plist);
+        };
+        '__PBXFileRef_Sources/Swilio.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Swilio.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Swilio = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Swilio;
+            buildPhases = (CompilePhase_Swilio, ___LinkPhase_Swilio);
+            buildRules = ();
+            dependencies = ();
+            name = Swilio;
+            productName = Swilio;
+            productReference = _____Product_Swilio;
+            productType = 'com.apple.product-type.framework';
+        };
+        _____Product_Swilio = {
+            isa = PBXFileReference;
+            explicitFileType = 'wrapper.framework';
+            path = 'Swilio.framework';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Swilio = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/Swilio.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/Swilio.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Swilio.swift';
+        };
+        ___LinkPhase_Swilio = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_Swilio = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Swilio, _ReleaseConf_Swilio);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Swilio = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Swilio.xcodeproj/Swilio_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Swilio = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Swilio.xcodeproj/Swilio_Info.plist'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = '$(TARGET_NAME:c99extidentifier)'; };
+            name = Release;
+        };
+        __Dependency_Swilio = {
+            isa = PBXTargetDependency;
+            target = ______Target_Swilio;
+        };
+        __PBXFileRef_SwilioTestSuite_Info.plist = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.plist.xml;
+            name = 'SwilioTestSuite_Info.plist';
+            path = 'Swilio.xcodeproj/SwilioTestSuite_Info.plist';
+            sourceTree = SOURCE_ROOT;
+        };
+        _______Group_SwilioTestSuite = {
+            isa = PBXGroup;
+            name = SwilioTestSuite;
+            path = 'Tests/Swilio';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Tests/Swilio/SwilioTests.swift', __PBXFileRef_SwilioTestSuite_Info.plist);
+        };
+        '__PBXFileRef_Tests/Swilio/SwilioTests.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'SwilioTests.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_SwilioTestSuite = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_SwilioTestSuite;
+            buildPhases = (CompilePhase_SwilioTestSuite, ___LinkPhase_SwilioTestSuite);
+            buildRules = ();
+            dependencies = (__Dependency_Swilio);
+            name = SwilioTestSuite;
+            productName = SwilioTestSuite;
+            productReference = _____Product_SwilioTestSuite;
+            productType = 'com.apple.product-type.bundle.unit-test';
+        };
+        _____Product_SwilioTestSuite = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.wrapper.cfbundle';
+            path = 'SwilioTestSuite.xctest';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_SwilioTestSuite = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Tests/Swilio/SwilioTests.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Tests/Swilio/SwilioTests.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Tests/Swilio/SwilioTests.swift';
+        };
+        ___LinkPhase_SwilioTestSuite = {
+            isa = PBXFrameworksBuildPhase;
+            files = (_LinkFileRef_Swilio_via_SwilioTestSuite);
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _LinkFileRef_Swilio_via_SwilioTestSuite = {
+            isa = PBXBuildFile;
+            fileRef = _____Product_Swilio;
+        };
+        _______Confs_SwilioTestSuite = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_SwilioTestSuite, _ReleaseConf_SwilioTestSuite);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_SwilioTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; OTHER_SWIFT_FLAGS = '$(inherited)'; INFOPLIST_FILE = 'Swilio.xcodeproj/SwilioTestSuite_Info.plist'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; };
+            name = Debug;
+        };
+        _ReleaseConf_SwilioTestSuite = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '@loader_path/../Frameworks'; FRAMEWORK_SEARCH_PATHS = '$(PLATFORM_DIR)/Developer/Library/Frameworks'; EMBEDDED_CONTENT_CONTAINS_SWIFT = 'YES'; OTHER_LDFLAGS = '$(inherited)'; INFOPLIST_FILE = 'Swilio.xcodeproj/SwilioTestSuite_Info.plist'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_SwilioTestSuite = {
+            isa = PBXTargetDependency;
+            target = ______Target_SwilioTestSuite;
+        };
+        '__PBXFileRef_Swilio.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'Swilio.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Swilio.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_Swilio);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        _______Tests_ = {
+            isa = PBXGroup;
+            children = (_______Group_SwilioTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+       TestProducts_ = {
+            isa = PBXGroup;
+            children = (_____Product_SwilioTestSuite);
+            name = Tests;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (TestProducts_, _____Product_Swilio);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Swilio.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Swilio.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
