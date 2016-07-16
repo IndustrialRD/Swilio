@@ -4,10 +4,10 @@ A Swifty Twilio client library.
 
 
 ![Swift3](https://img.shields.io/badge/Swift-3.0-blue.svg)
-![Mac OS X](https://img.shields.io/badge/os-Mac%20OS%20X-green.svg?style=flat)
-![iOS](https://img.shields.io/badge/os-iOS-green.svg?style=flat)
-![Linux](https://img.shields.io/badge/os-linux-green.svg?style=flat)
-![MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
+![Mac OS X](https://img.shields.io/badge/os-Mac%20OS%20X-blue.svg)
+![iOS](https://img.shields.io/badge/os-iOS-blue.svg?)
+![Linux](https://img.shields.io/badge/os-linux-blue.svg)
+![MIT](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Travis](https://travis-ci.org/IndustrialRD/Swilio.svg?branch=master)
 
 (https://travis-ci.org/IndustrialRD/Swilio)
