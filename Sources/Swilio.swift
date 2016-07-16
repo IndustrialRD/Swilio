@@ -7,7 +7,7 @@ public struct Swilio {
     
     
     static var session:URLSession {
-        let sessionConfig = URLSessionConfiguration.default
+        let sessionConfig = URLSessionConfiguration.default()
         return URLSession(configuration: sessionConfig)
     }
 

@@ -24,7 +24,6 @@ class SwilioTests: XCTestCase {
     
     func testHasMethodForSendingSMS() {
         XCTAssertNotNil(Swilio.sendSMS(message: "", to: "", from: "", callback: { (success) in
-        
         }))
     }
     
@@ -36,6 +35,7 @@ class SwilioTests: XCTestCase {
         XCTAssert( req.url?.absoluteString == "https://\(fakeAcct):\(fakeAuth)@api.twilio.com/2010-04-01/Accounts/\(fakeAcct)/Messages.json")
         XCTAssert(req.httpMethod == "POST")
         XCTAssert(req.value(forHTTPHeaderField: "Content-Type") == "application/x-www-form-urlencoded")
+
     }
 
     
