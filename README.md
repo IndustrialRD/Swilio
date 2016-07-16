@@ -14,9 +14,9 @@ Swilio.configure(accountSid: "YOUR_ACCOUNT_SID", authToken: "YOUR_AUTH_TOKEN")
 
 // Send an SMS
 
-XCTAssertNotNil(Swilio.sendSMS(message: "Hello Swilio!", to: "16465551212", from: "16465551234", callback: { (success) in
+Swilio.sendSMS(message: "Hello Swilio!", to: "16465551212", from: "16465551234", callback: { (success) in
     print("SMS Sent: \(success)")
-}))
+})
 
 ```
 
