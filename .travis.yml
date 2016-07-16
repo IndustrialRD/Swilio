@@ -4,7 +4,6 @@ os:
 language: generic
 sudo: required
 dist: trusty
-osx_image: xcode8
 env:
   - SWIFT_VERSION=DEVELOPMENT-SNAPSHOT-2016-06-20-a
 install:
